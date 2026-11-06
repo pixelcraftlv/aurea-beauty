@@ -1,0 +1,29 @@
+
+media:
+  input: media
+  output: /media
+
+content:
+  - name: products
+    label: Press-On Nails komplekti
+    type: file
+    path: data/products.json
+    format: json
+    list: true
+    fields:
+      - name: title
+        label: Komplekta nosaukums
+        type: string
+        required: true
+
+      - name: description
+        label: Apraksts
+        type: text
+
+      - name: price
+        label: Cena
+        type: string
+
+      - name: image
+        label: Produkta bilde
+        type: image
